@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    color: #333;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  .navigation-menu {
+    margin-bottom: 20px;
+  }
+  
+  .navigation-menu button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navigation-menu button:hover {
+    background-color: #0056b3;
+  }
+  
+  .recent-activity, .widgets, .announcements {
+    margin-bottom: 20px;
+  }
+  
+  .widgets {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .todo-widget, .calendar-widget {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-widget input {
+    width: calc(100% - 70px);
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .todo-widget button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-widget button:hover {
+    background-color: #218838;
+  }
+  
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    padding: 8px;
+    background-color: #e9ecef;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+
+  #todo-item{
+    font-weight: bolder;
+  }

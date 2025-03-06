@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Welcome Message -->
+    <header>
+      <h1 id="welcome-message">Welcome, User!</h1>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="profile-details">
+        <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="user-email">john.doe@example.com</span></p>
+      </div>
+    </section>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation-menu">
+      <button onclick="showSection('profile')">Profile</button>
+      <button onclick="showSection('settings')">Settings</button>
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- Recent Activity -->
+    <section class="recent-activity">
+      <h2>Recent Activity</h2>
+      <ul id="activity-list">
+        <li>Logged in on 10/01/2023</li>
+        <li>Updated profile picture</li>
+        <li>Completed task: "Review project plan"</li>
+      </ul>
+    </section>
+
+    <!-- Interactive Widgets -->
+    <section class="widgets">
+      <div class="todo-widget">
+        <h3>To-Do List</h3>
+        <input type="text" id="todo-input" placeholder="Add a new task">
+        <button onclick="addTodo()">Add</button>
+
+        <ul id="todo-list">
+
+            <!-- this where to put the created li for user input -->
+
+        </ul>
+
+      </div>
+      <div class="calendar-widget">
+        <h3>Calendar</h3>
+        <p>Upcoming Event: Team Meeting - 10/05/2023</p>
+      </div>
+    </section>
+
+    <!-- Announcements -->
+    <section class="announcements">
+      <h2>Announcements</h2>
+      <p>System maintenance scheduled for 10/10/2023.</p>
+    </section>
+
+    <!-- Logout Button -->
+    <footer>
+      <button onclick="logout()" class="logout-button">Logout</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
